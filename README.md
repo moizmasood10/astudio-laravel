@@ -46,5 +46,9 @@ Then head over to /admin, and login using
 - moiz@gmail.com
 - moiz1234
 
+![Create](imgs/create.png)
+![Table](imgs/table.png)
+![Tests](imgs/tests.png)
+
 
 
