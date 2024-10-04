@@ -12,6 +12,7 @@ Installed API module using php artisan install:api
 **User**
 - Created API routes for User
 - Created UserController for the User store, index, show, destroy, update methods.
+- Added filters to the index method.
 - Created UserTest to test the API routes for User
 
 **Project**
