@@ -1,66 +1,44 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**Laravel API+ Filament CRUD**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1) Scaffolded the Models, Migrations, and Factories using Blueprint.
+1) Installed API module using php artisan install:api
+1) **Auth**
+1) Created API routes for Auth
+1) Created AuthController for the store, login, and logout functions.
+1) Created AuthTest to test the API for Auth.
+4) **User**
+1) Created API routes for User
+1) Created UserController for the User store, index, show, destroy, update methods.
+1) Created UserTest to test the API routes for User
+5) **Project**
+1) Created API routes for Project
+1) Created ProjectController for the Project store, index, show, destroy, update methods.
+1) Created ProjectTest to test the API routes for Project
+6) **Timesheet**
+1) Created API routes for Timesheet
+1) Created TimesheetController for the Timesheet store, index, show, destroy, update methods.
+1) Created UserTest to test the API routes for Timesheet
+7) **Filament Admin CRUD Panel (Do check this out!)**
+1) Installed the panel for easy CRUD capabilities.
+1) Can be accessed using /admin
 
-## About Laravel
+**Instructions**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The tests have been formulated to test the API endpoints, and can be viewed in the tests directory under the Unit subdirectory.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. Pull the GitHub repository <https://github.com/moizmasood10/astudio-laravel>
+1. Run composer install
+1. Run php artisan serve
+1. Run php artisan test
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+To view the filament admin panel, first seed the database, use ‘php artisan migrate:fresh -- seed’
 
-## Learning Laravel
+● The seeders have already been created
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Then head over to /admin, and login using
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![](Aspose.Words.619a0d11-d73b-4e28-9546-9200ce52cef7.001.jpeg)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![](Aspose.Words.619a0d11-d73b-4e28-9546-9200ce52cef7.002.jpeg)
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![](Aspose.Words.619a0d11-d73b-4e28-9546-9200ce52cef7.003.jpeg)
