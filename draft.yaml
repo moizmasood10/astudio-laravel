@@ -1,0 +1,28 @@
+models:
+  User:
+    first_name: string
+    last_name: string
+    dob: date
+    gender: string
+    email: string unique
+    password: string
+    relationships:
+      belongsToMany: Project
+      hasMany: Timesheet
+
+  Project:
+    name: string
+    dept: string
+    start_date: date
+    end_date: date
+    status: string
+    relationships:
+      belongsToMany: User
+      hasMany: Timesheet
+
+  Timesheet:
+    task_name: string
+    date: date
+    hours: unsignedInteger
+    relationships:
+      belongsTo: Project, User
